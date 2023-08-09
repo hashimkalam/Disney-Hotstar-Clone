@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Disney+ Hotstar Clone </title>
+    <link rel="stylesheet" href="hotstar_clone.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <nav class="navbar">
+        <img src="./images/disney_logo.png" alt="disney_logo" class="brand-logo">
+
+        <ul class="nav-links">
+            <li class="nav-item"><a href="#">TV</a></li>
+            <li class="nav-item"><a href="#moviesDiv">Movies</a></li>
+            <li class="nav-item"><a href="#sportsDiv">Sports</a></li>
+            <li class="nav-item"><a href="#">Premium</a></li>
+        </ul>
+        
+
+        <div class="right-container">
+            <input type="search" class="search-box" placeholder="search">
+            <button class="sub-btn"> subscribe </button>
+            <a href="" class="login-link"> Login </a>
+        </div>
+    </nav>
+
+    <div class="carousel-container">
+        <div class="carousel"> </div>
+    </div>
+
+    <div class="video-card-container">
+
+        <div class="video-card">
+            <img src="images/disney_logo.png" class="video-card-image" alt="" />
+            <video src="videos/disney.mp4" muted loop class="card-video"></video>
+        </div>
+        
+        <div class="video-card">
+            <img src="images/pixar.webp" class="video-card-image" alt="" />
+            <video src="videos/pixar.mp4" muted loop class="card-video"></video>
+        </div>
+
+        <div class="video-card">
+            <img src="images/marvel.png" class="video-card-image" alt="" />
+            <video src="videos/marvel.mp4" muted loop class="card-video"></video>
+        </div>
+
+        <div class="video-card">
+            <img src="images/star_wars.png" class="video-card-image" alt="" />
+            <video src="videos/star_wars.mp4" muted loop class="card-video"></video>
+        </div>
+
+        <div class="video-card">
+            <img src="images/nat_geo.webp" class="video-card-image" alt="" />
+            <video src="videos/nat-geo.mp4" muted loop class="card-video"></video>
+        </div>
+    </div>
+
+
+    <div id="moviesDiv"></div>
+    <h1 class="title"> Recommended For You </h1>
+    <div class="movies-list">
+        <button class="pre-btn" title="btn"> <img src="images/pre.png" alt="prev-btn"> </button>
+        <button class="nxt-btn" title="btn"> <img src="images/nxt.png" alt="next-btn"> </button>
+
+        <div class="card-container">
+            <div class="card">
+                <img src="images/loki.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Loki </h2>
+                    <h6 class="des"> Loki ventures post 'Avengers: Endgame' to escape brother's shadow. </h6>
+                    <button class="watchlist-btn"> + add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/transformers_rise-of-the-beasts.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Transformers: Rise of the Beasts </h2>
+                    <h6 class="des"> Optimus Prime joins Maximals to save Earth from new threat. </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/cars-3.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Cars 3 </h2>
+                    <h6 class="des"> McQueen and Cruz aim to reclaim racing supremacy. </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/terminator3.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Terminator 3: Rise of the Machines </h2>
+                    <h6 class="des"> Post-apocalyptic cyborg defends against deadly robots. </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/avengers-infinitywar.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Avengers: Infinity War  </h2>
+                    <h6 class="des"> Avengers battle Thanos for infinity stones, facing extreme danger. </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/godzilla-vs-kong.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Godzilla vs. Kong  </h2>
+                    <h6 class="des"> King Kong aids humans against Godzilla's havoc, journey to Hollow Earth. </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/scoob.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Scoob! </h2>
+                    <h6 class="des"> Shaggy, Scooby, and Mystery Inc foil Dastardly's scheme with Blue Falcon. </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/Ant-Man-Wasp_Quantumania.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Ant-Man and The Wasp: Quantumania </h2>
+                    <h6 class="des"> Ant-Man, Wasp venture into Quantum Realm, face new challenges. </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/maze-runner.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Maze Runner </h2>
+                    <h6 class="des"> Maze Runner trilogy adapts James Dashner's dystopian novels. </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/thor3.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Thor: The Dark World </h2>
+                    <h6 class="des"> Thor battles Dark Elf Malekith to save Nine Realms. </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/ironman1.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Iron Man </h2>
+                    <h6 class="des"> Stark builds suit, fights evil as armored hero. </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/harry-potter_8.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Harry Potter and the Deathly Hallows: Part 2 </h2>
+                    <h6 class="des"> Trio hunts Horcruxes, Hogwarts unites against Voldemort. </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/jumanji.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Jumanji </h2>
+                    <h6 class="des"> Teens trapped in game, must cooperate to escape. </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/the-conjuring.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> The Conjuring </h2>
+                    <h6 class="des"> Perron family seeks Warrens' aid against haunted farmhouse. </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="title"> Popular Shows </h1>
+    <div class="movies-list">
+        <button class="pre-btn" title="btn"> <img src="images/pre.png" alt="prev-btn"> </button>
+        <button class="nxt-btn" title="btn"> <img src="images/nxt.png" alt="next-btn"> </button>
+
+        <div class="card-container">
+
+            <div class="card">
+                <img src="images/topgun.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Top Gun: Maverick </h2>
+                    <h6 class="des"> Maverick trains graduates, faces past, makes ultimate sacrifice in mission. </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/annabelle-creation.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Annabelle: Creations </h2>
+                    <h6 class="des"> Parents trap daughter's spirit in doll, demon emerges when orphans find it. </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/avengers-endgame.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Avengers Endgame </h2>
+                    <h6 class="des"> Avengers regroup to restore universe post Thanos. </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/maze-runner_3.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Maze Runner: The Death Cure </h2>
+                    <h6 class="des"> Thomas and Gladers breach Last City to cure deadly Flare. </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/oppenheimer.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Oppenheimer </h2>
+                    <h6 class="des"> Oppenheimer leads atomic bomb project, alters history with nuclear test. </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/rings.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Rings </h2>
+                    <h6 class="des"> Julia saves cursed video-watcher boyfriend with hidden message. </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/mission-impossible_fallout.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Mission Impossible: Fallout </h2>
+                    <h6 class="des"> Ethan Hunt thwarts terrorists' simultaneous nuclear plot. </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/conjuring3.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> The Conjuring 3: The Devil Made Me Do It.  </h2>
+                    <h6 class="des"> Warrens tackle demonic possession murder case. </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/ghost-rider.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Ghost Rider </h2>
+                    <h6 class="des"> Movie Description </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/barbie.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Barbie </h2>
+                    <h6 class="des"> Barbie, Ken explore real world from perfect Barbie Land. </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/ironman3.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Iron Man 3 </h2>
+                    <h6 class="des"> Stark faces Mandarin, seeks self-discovery in battle. </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/harry-potter_1.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Harry Potter: The Philosopher Stone </h2>
+                    <h6 class="des"> Orphan Harry enters magical world at Hogwarts, faces trouble. </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/IT2.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> IT: Chapter 2 </h2>
+                    <h6 class="des"> Losers Club called back by Mike to defeat returning Pennywise. </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/deadpool2.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Deadpool 2 </h2>
+                    <h6 class="des"> Deadpool saves mutant, assembles team to thwart time-travelling mercenary. </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+    <div id="sportsDiv"></div>
+    <h1 class="title"> Sports </h1>
+    <div class="movies-list">
+        <button class="pre-btn" title="btn"> <img src="images/pre.png" alt="prev-btn"> </button>
+        <button class="nxt-btn" title="btn"> <img src="images/nxt.png" alt="next-btn"> </button>
+
+        <div class="card-container">
+
+            <div class="card">
+                <img src="images/matildas.jpg" class="card-image" alt="">
+                <div class="card-body"> 
+                    <h2 class="name">Matildas: The World at Our Feet (2023)</h2>
+                    <h6 class="des">Movie Description</h6>
+                    <button class="watchlist-btn">Add to Watchlist</button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="images/crossover.webp" class="card-image" alt="">
+                <div class="card-body"> 
+                    <h2 class="name">The Crossover (2023)</h2>
+                    <h6 class="des">Movie Description</h6>
+                    <button class="watchlist-btn">Add to Watchlist</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/Save-Our-Squad.jpeg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Save Our Squad (2022) </h2>
+                    <h6 class="des"> Movie Description </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/becoming.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Becoming (2020) </h2>
+                    <h6 class="des"> Movie Description </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/lance.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Lance (2020) </h2>
+                    <h6 class="des"> Movie Description </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/once.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Once (2017) </h2>
+                    <h6 class="des"> Movie Description </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/matildas.jpg" class="card-image" alt="">
+                <div class="card-body"> 
+                    <h2 class="name">Matildas: The World at Our Feet (2023)</h2>
+                    <h6 class="des">Movie Description</h6>
+                    <button class="watchlist-btn">Add to Watchlist</button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="images/crossover.webp" class="card-image" alt="">
+                <div class="card-body"> 
+                    <h2 class="name">The Crossover (2023)</h2>
+                    <h6 class="des">Movie Description</h6>
+                    <button class="watchlist-btn">Add to Watchlist</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/Save-Our-Squad.jpeg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Save Our Squad (2022) </h2>
+                    <h6 class="des"> Movie Description </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/becoming.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Becoming (2020) </h2>
+                    <h6 class="des"> Movie Description </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/lance.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Lance (2020) </h2>
+                    <h6 class="des"> Movie Description </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/once.jpg" class="card-image" alt="">\
+                <div class="card-body"> 
+                    <h2 class="name"> Once (2017) </h2>
+                    <h6 class="des"> Movie Description </h6>
+                    <button class="watchlist-btn"> add to watchlist </button>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+    <script src="hotstar_clone.js" async></script>
+
+</body>
+</html>
